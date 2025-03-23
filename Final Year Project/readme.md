@@ -7,18 +7,19 @@ This project is a **machine learning-based system** that predicts whether a pers
 
 ## 🏗️ Project Structure  
 
-📂 **Final Year Project**  
- ├── 📂 **data/** (Dataset storage)  
- │   ├── raw/  *(Original dataset)*  
- │   ├── processed/  *(Cleaned & preprocessed dataset)*  
- ├── 📂 **models/** (Trained models storage)  
- │   ├── random_forest.pkl *(Saved model)*  
- │   ├── knn.pkl *(Saved model for comparison)*  
- ├── 📂 **src/** (Code files)  
- │   ├── train.py *(Trains the ML models & saves them)*  
- │   ├── predict.py *(Loads the model & makes predictions)*  
- ├── 📜 requirements.txt *(List of dependencies to install)*  
- ├── 📜 README.md *(Project documentation & usage guide)*  
+📂 Final Year Project
+├── 📂 data/ (Dataset storage)
+│ ├── raw/ (Original dataset)
+│ ├── processed/ (Cleaned & preprocessed dataset)
+├── 📂 models/ (Trained models storage)
+│ ├── random_forest.pkl (Saved model)
+│ ├── knn.pkl (Saved model for comparison)
+├── 📂 src/ (Code files)
+│ ├── train.py (Trains the ML models & saves them)
+│ ├── predict.py (Loads the model & makes predictions via CLI)
+│ ├── app.py (Streamlit-based web application)
+├── 📜 requirements.txt (List of dependencies to install)
+├── 📜 README.md (Project documentation & usage guide)
 
 ---
 
@@ -45,6 +46,9 @@ This will save the trained models inside the models/ directory.
 ### 5️⃣ Make Predictions
 Run the prediction script to input patient details and get a prediction.
 python src/predict.py
+
+### 6️⃣ Need to view in WEB
+streamlit run src/app.py  
 
 🏆 Features
 ✅ Random Forest Model: Achieves high accuracy (~90%)
